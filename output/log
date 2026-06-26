@@ -1,0 +1,120 @@
+===== Memory Controller Debug Log =====
+Config:
+  Policy           : FCFS
+  tRC              : 4
+  thit             : 1
+  Banks            : 4
+
+Cycle 0:
+  Enqueue  ID=1  Op=R  Addr=0x0  Bank=0 Row=0x0
+  Issue    ID=1  Bank=0  RowMiss   Lat=4  Complete@4
+Cycle 1:
+  Enqueue  ID=2  Op=R  Addr=0x3f  Bank=0 Row=0x0
+Cycle 2:
+  Enqueue  ID=3  Op=W  Addr=0x40  Bank=1 Row=0x0
+  Issue    ID=3  Bank=1  RowMiss   Lat=4  Complete@6
+Cycle 4:
+  Complete ID=1  Data=0
+  Enqueue  ID=4  Op=R  Addr=0x80  Bank=2 Row=0x0
+  Issue    ID=2  Bank=0  RowHit   Lat=1  Complete@5
+  Issue    ID=4  Bank=2  RowMiss   Lat=4  Complete@8
+Cycle 5:
+  Complete ID=2  Data=0
+Cycle 6:
+  Complete ID=3  WriteData=55
+  Enqueue  ID=5  Op=R  Addr=0xc0  Bank=3 Row=0x0
+  Issue    ID=5  Bank=3  RowMiss   Lat=4  Complete@10
+Cycle 8:
+  Complete ID=4  Data=0
+  Enqueue  ID=6  Op=W  Addr=0x100  Bank=0 Row=0x1
+  Issue    ID=6  Bank=0  RowMiss   Lat=4  Complete@12
+Cycle 10:
+  Complete ID=5  Data=0
+  Enqueue  ID=7  Op=R  Addr=0x13f  Bank=0 Row=0x1
+Cycle 12:
+  Complete ID=6  WriteData=99
+  Enqueue  ID=8  Op=R  Addr=0x8c0  Bank=3 Row=0x8
+  Issue    ID=7  Bank=0  RowHit   Lat=1  Complete@13
+  Issue    ID=8  Bank=3  RowMiss   Lat=4  Complete@16
+Cycle 13:
+  Complete ID=7  Data=0
+Cycle 15:
+  Enqueue  ID=9  Op=R  Addr=0x1040  Bank=1 Row=0x10
+  Issue    ID=9  Bank=1  RowMiss   Lat=4  Complete@19
+Cycle 16:
+  Complete ID=8  Data=0
+Cycle 18:
+  Enqueue  ID=10  Op=W  Addr=0x103f  Bank=0 Row=0x10
+  Issue    ID=10  Bank=0  RowMiss   Lat=4  Complete@22
+Cycle 19:
+  Complete ID=9  Data=0
+Cycle 20:
+  Enqueue  ID=11  Op=R  Addr=0x2040  Bank=1 Row=0x20
+  Issue    ID=11  Bank=1  RowMiss   Lat=4  Complete@24
+Cycle 22:
+  Complete ID=10  WriteData=77
+  Enqueue  ID=12  Op=R  Addr=0x3080  Bank=2 Row=0x30
+  Issue    ID=12  Bank=2  RowMiss   Lat=4  Complete@26
+Cycle 24:
+  Complete ID=11  Data=0
+  Enqueue  ID=13  Op=W  Addr=0x40c0  Bank=3 Row=0x40
+  Issue    ID=13  Bank=3  RowMiss   Lat=4  Complete@28
+Cycle 26:
+  Complete ID=12  Data=0
+  Enqueue  ID=14  Op=R  Addr=0x8000  Bank=0 Row=0x80
+  Issue    ID=14  Bank=0  RowMiss   Lat=4  Complete@30
+Cycle 28:
+  Complete ID=13  WriteData=88
+  Enqueue  ID=15  Op=R  Addr=0x40  Bank=1 Row=0x0
+  Issue    ID=15  Bank=1  RowMiss   Lat=4  Complete@32
+Cycle 30:
+  Complete ID=14  Data=0
+  Enqueue  ID=16  Op=W  Addr=0x20000  Bank=0 Row=0x200
+  Issue    ID=16  Bank=0  RowMiss   Lat=4  Complete@34
+Cycle 32:
+  Complete ID=15  Data=55
+  Enqueue  ID=17  Op=R  Addr=0x2403f  Bank=0 Row=0x240
+Cycle 34:
+  Complete ID=16  WriteData=66
+  Enqueue  ID=18  Op=R  Addr=0x3ffc0  Bank=3 Row=0x3ff
+  Issue    ID=17  Bank=0  RowMiss   Lat=4  Complete@38
+  Issue    ID=18  Bank=3  RowMiss   Lat=4  Complete@38
+Cycle 36:
+  Enqueue  ID=19  Op=W  Addr=0xfffff  Bank=3 Row=0xfff
+Cycle 38:
+  Complete ID=17  Data=0
+  Complete ID=18  Data=0
+  Enqueue  ID=20  Op=R  Addr=0x102000  Bank=0 Row=0x1020
+  Issue    ID=19  Bank=3  RowMiss   Lat=4  Complete@42
+  Issue    ID=20  Bank=0  RowMiss   Lat=4  Complete@42
+Cycle 40:
+  Enqueue  ID=21  Op=W  Addr=0x102040  Bank=1 Row=0x1020
+  Issue    ID=21  Bank=1  RowMiss   Lat=4  Complete@44
+Cycle 42:
+  Complete ID=19  WriteData=11
+  Complete ID=20  Data=0
+  Enqueue  ID=22  Op=R  Addr=0x102080  Bank=2 Row=0x1020
+  Issue    ID=22  Bank=2  RowMiss   Lat=4  Complete@46
+Cycle 44:
+  Complete ID=21  WriteData=22
+  Enqueue  ID=23  Op=R  Addr=0xabcdef  Bank=3 Row=0xabcd
+  Issue    ID=23  Bank=3  RowMiss   Lat=4  Complete@48
+Cycle 46:
+  Complete ID=22  Data=0
+  Enqueue  ID=24  Op=W  Addr=0x1234567  Bank=1 Row=0x2345
+  Issue    ID=24  Bank=1  RowMiss   Lat=4  Complete@50
+Cycle 48:
+  Complete ID=23  Data=0
+  Enqueue  ID=25  Op=R  Addr=0x103f  Bank=0 Row=0x10
+  Issue    ID=25  Bank=0  RowMiss   Lat=4  Complete@52
+Cycle 50:
+  Complete ID=24  WriteData=33
+  Enqueue  ID=26  Op=R  Addr=0xffffff  Bank=3 Row=0xffff
+  Issue    ID=26  Bank=3  RowMiss   Lat=4  Complete@54
+Cycle 52:
+  Complete ID=25  Data=77
+Cycle 54:
+  Complete ID=26  Data=0
+
+Simulation Complete
+Total Cycles: 54

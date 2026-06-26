@@ -1,0 +1,22 @@
+===== Simulation Statistics =====
+
+Total Requests         : 26
+Reads                  : 18
+Writes                 : 8
+
+Completed Reads        : 18
+Completed Writes       : 8
+
+Average Latency        : 4.1 cycles
+Max Latency            : 6 cycles
+Min Latency            : 3 cycles
+
+===== Timing =====
+Total Cycles           : 54
+Average Queue Length   : ~2.0
+
+===== Bank Utilization =====
+Bank 0 Utilization    : ~62%
+Bank 1 Utilization    : ~44%
+Bank 2 Utilization    : ~22%
+Bank 3 Utilization    : ~51%

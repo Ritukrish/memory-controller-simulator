@@ -1,0 +1,23 @@
+# ===== DRAM Timing (in cycles) =====
+tRC = 4
+thit = 1
+
+# ===== Organization =====
+num_banks   = 4
+queue_size  = 8
+
+# ===== Address Mapping =====
+# Format: row:bank:col (MSB → LSB)
+row_bits  = 16
+bank_bits = 2
+col_bits  = 6
+
+# addr[23:8] → row
+# addr[7:6]  → bank
+# addr[5:0]  → column
+
+# ===== Policy =====
+schedule_policy = FCFS
+
+# ===== Debug =====
+enable_log = 1
